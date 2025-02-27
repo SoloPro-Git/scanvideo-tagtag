@@ -1,0 +1,25 @@
+# 文件大小限制（以MB为单位）
+file_size: 100
+
+# OpenAI配置
+openai:
+  api_endpoint: "https://api.siliconflow.cn/v1"
+  api_key: "YOUR_API_KEY"
+  model: "Qwen/Qwen2.5-7B-Instruct"
+
+# 请求配置
+request:
+  delay: 2.0  # 每次请求间隔（秒）
+  timeout: 30  # 请求超时时间（秒）
+  retries: 3   # 重试次数
+
+# LLM调用配置
+llm:
+  delay: 1.0  # 每次调用间隔（秒）
+  max_tokens: 1500  # 最大token数
+  temperature: 0.3  # 降低温度参数，使输出更加确定性
+  process_retries: 3  # 整体处理失败时的重试次数
+
+# 输出配置
+output:
+  default_excel_path: "output.xlsx" 
