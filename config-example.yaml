@@ -16,7 +16,7 @@ request:
 # LLM调用配置
 llm:
   delay: 1.0  # 每次调用间隔（秒）
-  max_tokens: 1500  # 最大token数
+  max_tokens: 15000  # 最大token数
   temperature: 0.3  # 降低温度参数，使输出更加确定性
   process_retries: 3  # 整体处理失败时的重试次数
 
